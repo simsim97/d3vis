@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,700');
 
 html {
-    background: darkturquoise;
+    background: #231F20;
     min-width: 1280px;
     min-height: 720px;
     overflow: auto;
 
     font-family: "Sarabun", sans-serif;
     font-weight: 300;
-    color: white;
+    color: #EAEAEA;
     letter-spacing: 0.1em;
 }
 
@@ -22,7 +22,7 @@ h1{
     font-family: "Major Mono Display", sans-serif;
     font-size: 3em;
 
-    color: white;
+    color: #EAEAEA;
     letter-spacing: normal;
     text-transform: lowercase;
 
@@ -43,7 +43,7 @@ div#div_page_desc {
 }
 
 div#div_data_desc {
-    background: beige;
+    background: floralwhite;
     box-sizing: border-box;
     padding: 10px 20px;
 
@@ -51,7 +51,7 @@ div#div_data_desc {
 }
 
 div#div_visuals {
-    background: beige;
+    background: floralwhite;
     background-clip: content-box;
     width: 100%;
     height: 100%;
@@ -63,12 +63,12 @@ div#div_visuals {
 div#div_buttons {
     padding: 20px;
 }
-
-button {
-    background: beige;
-    border: none;
+.button {
+    background: #AD974F;
+    border: 10;
     height: 30px;
     padding: 0px 10px;
+    display: inline-block;
 
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
@@ -76,21 +76,32 @@ button {
     letter-spacing: 0.1em;
 }
 
-button:hover {
-    background: darkturquoise;
+/*.button2 {position: absolute;} /* Blue */
+/*.button3 {position: absolute;} /* Red */
+/*.button4 {position: absolute;} /* Gray */
+/*.button5 {position: absolute;} /* Gray */
+/*.button6 {position: absolute;} /* Gray */
+/*.button7 {position: absolute;} /* Gray */
+
+
+.button:hover {
+    background: lightyellow;
     cursor: pointer;
 }
 
-button:focus {
+.button:focus {
     outline: 0;
 }
 
-
+.feature.active {
+    fill: orange;
+}
 .svg_boxes {
-    background: beige;
+    background: #EAEAEA;
+    align-content: center;
     display: block;
-    width: 70%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
     min-width: 500px;
     min-height: 500px;
     /*box-sizing: border-box;*/

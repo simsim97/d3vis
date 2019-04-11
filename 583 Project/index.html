@@ -10,8 +10,35 @@
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="//d3js.org/topojson.v1.min.js"></script>
   <script src = "d3/d3.js"></script>
-    <script src="index.js" type = "module"></script>
-  <h3>Map</h3>
+  <h1>Project 4: Opiod Crisis in Canada</h1>
+  <div class="flex">
+    <form class="button button4">
+  <button type="button" onclick="changeColor('oxycodone')">Oxycodone</button>
+   </form>
+    <form class="button button3">
+  <button type="button" onclick="changeColor('tramadol')">Tramadol</button>
+    </form>
+    <form class="button button2">
+  <button type="button" onclick="changeColor('fent')">Fentanyl</button>
+    </form>
+    <form class="button button5">
+      <button type= "button" onclick="changeColor('codeine')">Codeine</button>
+    </form>
+    <form class="button button6">
+      <button type= "button" onclick="changeColor('hydro')">Hydromorphone</button>
+    </form>
+    <form class="button button7">
+      <button type= "button" onclick="changeColor('morph')">Morphine</button>
+    </form>
+
+    <form class="button">
+      <button type= "button" onclick="changeColor('clear')">Clear</button>
+    </form>
+  </div>
   <svg id="vis1" class="svg_boxes"></svg>
+
+  <!-- Create a div where the circle will take place -->
+  <div id="dataviz_buttonTriger"></div>
+  <script src="bundle.js"></script>
   </body>
 </html>
